@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GRE General Test</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #b4b4b4;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        .loading-img_container {
+            display: flex;
+
+            margin: 15vh auto;
+        }
+
+        .toolbar {
+            width: 100%;
+            height: 6.5vh;
+            background-color: #3a3736;
+            border: #882F5C 1px solid;
+        }
+
+        .container {
+            max-width: 68%;
+        }
+
+        .logo-gre {
+            width: 40vw;
+            height: 100%;
+            margin-left: 1.2vw;
+        }
+
+        .toolbar-snap {
+            min-height: 3.5vh;
+            background-color: #f0e1e4;
+        }
+
+        .content {
+            min-height: 685px;
+            background-color: #fff;
+            border: #D0D0D0 1px solid;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 800;
+            color: #414042;
+        }
+
+        .card {
+            margin-top: 120px;
+        }
+
+        .info-table {
+            table-layout: fixed;
+            border: black 1px solid;
+            padding: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .info-table td {
+            height: 30px;
+        }
+        .btn-area{
+            margin-top: 35px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="header">
+            <div class="toolbar">
+                <span class="logo logo-gre">
+                    <img ng-src="./img/greLogo.svg" alt="grelogo" src="./img/greLogo.svg" width="125px" height="100%">
+                </span>
+            </div>
+            <div class="toolbar-snap"></div>
+            <div class="content">
+
+                <div class="container">
+                    <div class="card">
+                        <h1>Test Taker Infomation</h1>
+                        <p ng-bind-html="ctrl.desc" class="ng-binding">Please check the following information. If this
+                            is correct, select the <strong>Continue</strong> button. If this is incorrect, select the
+                            <strong>Exit</strong> button.</p>
+                        <div class="info-table">
+                            <table>
+                                <tr>
+                                    <td>Test:</td>
+                                    <td>Demo</td>
+                                </tr>
+                                <tr>
+                                    <td>Name:</td>
+                                    <td>ZHANG LIN</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Taker ID:</td>
+                                    <td>34343434223</td>
+                                </tr>
+                            </table>
+
+                        </div>
+                    </div>
+
+                    <div class="btn-area">
+                        <button type="button" class="btn btn-default">Exit</button>
+
+                        <!-- Indicates a successful or positive action -->
+                        <button type="button" class="btn btn-primary">Continue</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
